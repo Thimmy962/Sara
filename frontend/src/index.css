@@ -1,0 +1,124 @@
+:root{
+  --click-color: rgb(44, 44, 54);
+  --bg-color: #fff
+}
+
+/* General */
+
+body{
+    background-color: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li, a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.click:hover{
+    cursor: pointer;
+}
+
+
+/* Header Component*/
+#header{
+    height: 7vh;
+    background-color: var(--click-color);
+}
+
+#header{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+}
+
+#header #company{
+    width: 15vw;
+    color: var(--bg-color);
+    text-align: center;
+}
+
+#header #header-list{
+    width: 70vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-list{
+    color: var(--bg-color);
+}
+
+#header #cart{
+    width: 15vw;
+    text-align: center;
+    color: var(--bg-color);
+}
+
+/* ItemList Component */
+#itemlist{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.item{
+    width: 200px;
+    height: 250px;
+    border: 1px solid var(--click-color);
+    box-shadow: 2px 2px 2px 2px var(--click-color);
+    border-radius: 5px;
+}
+
+/* Card Component */
+.hover:hover{
+    color: var(--bg-color);
+    background-color: var(--click-color);
+}
+
+/* Homepage */
+#homepage{
+    width: 80vw;
+    margin: auto;
+    padding-top: 40px;
+    height: 87vh;
+    
+}
+
+/* Categorypage */
+#category{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+#subcategories{
+    background-color: grey;
+    width: 15%;
+}
+
+
+/* Details Page */
+#details{
+    width: 50vw;
+    margin: auto;
+    padding-top: 50px;
+}
+
+#detailhead{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#detailhead button{
+    background-color: var(--bg-color);
+    color: var(--click-color);
+    width: 85px;
+    height: 30px;
+    border: 0;
+}
